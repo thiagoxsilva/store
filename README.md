@@ -1,3 +1,9 @@
+Projeto criado utilizando expo bare workflow.
+
+1. Rodar ```yarn``` ou ```npx install```.
+2. Rodar ```expo start```.
+
+
 Api utilizada: https://fakestoreapi.com/docs#products
 
  ![Simulator Screen Shot - iPhone 11 - 2022-06-20 at 11 48 53](https://user-images.githubusercontent.com/11490591/174633538-54433c3c-d121-4725-9374-2edeafba216b.png)
