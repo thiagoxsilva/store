@@ -35,7 +35,7 @@ export function Store({ navigation }: Props) {
 
   async function fetchAllProducts() {
     try {
-      const { data } = await api.get("/products");
+      const { data } = await api.get("/products", {retry: 3, retryDelay: 3000});;
 
       setProducts(data);
     } catch (error) {
