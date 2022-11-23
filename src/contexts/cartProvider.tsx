@@ -39,7 +39,7 @@ export function CartProvider({ children }: CartProviderProps) {
     setQuantity(newQuantity);
   }, [cart]);
 
-  async function addProductToCart(item: Product) {
+  function addProductToCart(item: Product) {
     const productExistOnCart = cart.find(
       (cartProduct) => cartProduct.id === item.id
     );
@@ -60,7 +60,7 @@ export function CartProvider({ children }: CartProviderProps) {
     }
   }
 
-  async function removeProductFromCart(item: Product) {
+  function removeProductFromCart(item: Product) {
     const productOnCart = cart.find(
       (cartProduct) => cartProduct.id === item.id
     );
@@ -83,7 +83,7 @@ export function CartProvider({ children }: CartProviderProps) {
     }
   }
 
-  async function deleteProductFromCart(item: Product) {
+  function deleteProductFromCart(item: Product) {
     const newCart = cart;
     newCart.splice(cart.indexOf(item), 1);
 
