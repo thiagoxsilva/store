@@ -22,8 +22,9 @@ export const Header = styled.View`
 export const Title = styled.Text`
   margin-bottom: 15px;
 
-  font-family: ${({ theme }) => theme.fonts.medium};
+  font-family: ${({ theme }) => theme.fonts.bold};
   font-size: ${RFValue(18)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const CartContainer = styled(TouchableOpacity)`
