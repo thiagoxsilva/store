@@ -16,8 +16,7 @@ api.interceptors.response.use(undefined, (err) => {
   config.retry -= 1;
   const delayRetryRequest = new Promise((resolve) => {
     setTimeout(() => {
-      console.log("retry the request", config.url);
-      resolve();
+      resolve("");
     }, config.retryDelay || 1000);
   });
 
